@@ -1,0 +1,66 @@
+Node JS is free & open-source cross-platform 
+JS Runtime Ernironment,that execute JS Code outside browser.
+
+Its JS Runtime env(not a framework/library)
+
+Run on chrome v8 engine
+
+Written c++
+
+To Developer Server side applictions.
+Why Node JS
+-----------
+Fast & Higly Scalable.
+Asynchronous & Non-blocking
+Ligthweight & Effienct way to create server
+Same Js Lang for both client & Server
+
+
+
+Node package Manager:
+----------------------
+
+Node Js inbuilt Module
+
+Node Js 3rd party Module - npmjs.com(global packaging regi)
+
+
+Pre-Requiestes
+---------------
+JS 
+JS - Es6 features
+------------------
+a)let,const
+b)class
+c)${} - string literal
+d)()=>{} / fat arrow or arrow function
+e)import/export
+f)[]-new methods.
+  [].foreach()
+  [].map()
+  [].filter()
+  [].find()
+  [].reduce()
+
+g)Destructuring
+  Array Destructuring & Object Destructuring
+h)...(triple dot - spread and rest)
+i)async&await
+  Ansychronous programing using JS
+  a)callback
+  b)Promise
+  c)async & await
+=======================
+Node Js Modules
+inbuilt Modules
+-------------------
+os
+fs
+path
+dotenv
+http
+url
+
+ES5  vs ES6
+--------------------
+ECMA Script
