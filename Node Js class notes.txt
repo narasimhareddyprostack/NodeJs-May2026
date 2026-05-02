@@ -64,3 +64,19 @@ url
 ES5  vs ES6
 --------------------
 ECMA Script
+
+
+Node JS - inbuilt Modules
+--------------------------
+os 
+fs   - to read and write files( abc.txt,abc.csv,abc.json)
+path - create folder and file path dynamically based on
+       platform.
+http - To create server
+
+client  -  server
+           req		
+browser ----------> server
+           resp		
+browser <---------- Server
+
