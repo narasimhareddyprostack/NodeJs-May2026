@@ -82,4 +82,38 @@ browser <---------- Server
 ================================
 static website-node JS
 
+techvision.com/
+127.0.0.1:8080
+localhost:8080/
 
+index.html as response.
+
+3rd Party Node Modules
+-----------------------
+nodemon
+npm install -g nodemon
+npm install nodemon
+npm install dotenv
+npm install express
+
+
+nodemon - package: running application/server in dev mode.
+	  no need to stop and start server every time.
+
+
+dotenv  - package: To maintain and read application env variable
+	  like port, host, db_local  url, server url, 
+	  application JWT Secret keys
+	  to read the cofiguration variable values.
+
+path    - to create and maintain folder and file paths.
+fs      - read and write text files
+
+node server.js
+nodemon server.js
+==================
+React JS 
+npm start / npm run dev
+
+Run backend also - npm start.
+update your package.json file.
