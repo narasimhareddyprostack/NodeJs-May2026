@@ -108,7 +108,7 @@ dotenv  - package: To maintain and read application env variable
 
 path    - to create and maintain folder and file paths.
 fs      - read and write text files
-
+http    - to create server
 node server.js
 nodemon server.js
 ==================
@@ -117,3 +117,178 @@ npm start / npm run dev
 
 Run backend also - npm start.
 update your package.json file.
+
+================================
+http module?
+------------
+1.
+Routing?
+
+req.url="/user/101&&page=2
+
+2.Developing Rest API
+
+3.Modularing
+
+
+---------------------------------------------------------
+express Js :  node JS Framework.
+
+Create express app and develop the rest api?
+
+install requried dependencies/packages
+
+npm i express dotenv
+
+
+//Application Root - API
+/*
+Usage: Application Root Request
+Rest API URL: http://127.0.0.1:8080/ 
+Method Type:GET
+Required Fields: None
+Access Type Public
+*/
+
+What is PostMan Tool? Testing Rest API
+
+Develop CRUD Rest API using express Js?
+Create new user/emp/order/product           -  POST  
+Read/fetch users/employees/orders/product   -  GET
+Update user by id/emp by id/order by id     -  PUT
+Delete user by id/emp by id                 -  DELETE
+
+
+/*
+Usage: Application Root Request
+Rest API URL: http://127.0.0.1:8080/ 
+Method Type:GET
+Required Fields: None
+Access Type Public
+*/
+
+/*
+Usage: create new User
+Rest API URL: http://127.0.0.1:8080/create 
+Method Type:POST
+Required Fields: username,email,gender or none
+Access Type Public
+*/
+
+/*
+Usage: Read/fetch users
+Rest API URL: http://127.0.0.1:8080/read 
+Method Type:GET
+Required Fields: None
+Access Type Public
+*/
+
+/*
+Usage:update user
+Rest API URL: http://127.0.0.1:8080/update 
+Method Type:PUT
+Required Fields: None
+Access Type Public
+*/
+
+/*
+Usage: delete user
+Rest API URL: http://127.0.0.1:8080/delete
+Method Type:DELETE
+Required Fields: None
+Access Type Public
+*/
+=================================================
+
+/*
+Usage: delete product
+Rest API URL: http://127.0.0.1:8080/api/delete
+Method Type:DELETE
+Required Fields: None
+Access Type Public
+*/
+
+/*
+Usage: update product
+Rest API URL: http://127.0.0.1:8080/api/update
+Method Type:PUT
+Required Fields: None
+Access Type Public
+*/
+
+
+http - 
+
+express?
+1.
+
+
+======================
+CRUD Operation - on employee json file data
+
+/*
+usage: create new employee
+Rest API URL: http://127.0.0.1:8080/emp/create
+Method Type:POST
+Required Fields: eid,ename,esal,gender
+Access Type:Public
+*/
+
+/*
+usage: read emp by id
+Rest API URL: http://127.0.0.1:8080/emp/101
+Method Type:GET
+Required Fields: None
+Access Type:Public
+*/
+/*
+usage:read all employees
+Rest API URL: http://127.0.0.1:8080/emp/
+Method Type:GET
+Required Fields: None 
+Access Type:public
+*/
+
+/*
+usage:update emp by id
+Rest API URL: http://127.0.0.1:8080/emp/101
+Method Type:PUT
+Required Fields: eid,ename,esal,gender
+Access Type:public
+*/
+
+/*
+usage:delet emp by id
+Rest API URL: http://127.0.0.1:8080/emp/101
+Method Type:DELETE
+Required Fields: None
+Access Type:public
+*/
+=================================
+POST    - http://127.0.0.1:8080/emp/create
+GET     - http://127.0.0.1:8080/emp/101
+GET     - http://127.0.0.1:8080/emp/
+PUT     - http://127.0.0.1:8080/emp/101
+DELETE  - http://127.0.0.1:8080/emp/101
+
+
+https://www.flipkart.com/
+rvs-landing-page/Electronics?
+
+screen=dynamic &
+pk=stores%3D0pm%2Ffcn%2F821~pIds%3DACCHKXSYMGTX3DJG~contentTags%3DRVS_LANDING_PAGE&marketplace=FLIPKART
+&
+cat=PersonalAudio
+&
+bu=Electronics
+
+Request - URL  (domain name, path para,query para)
+Request - Body ( form data)
+Request - Header(jwt token - auth)
+
+
+POST    - http://127.0.0.1:8080/emp/create
+GET     - http://127.0.0.1:8080/emp/101
+GET     - http://127.0.0.1:8080/emp/
+PUT     - http://127.0.0.1:8080/emp/101
+DELETE  - http://127.0.0.1:8080/emp/101
