@@ -17,3 +17,8 @@ app.listen(8080,'127.0.0.1',(err)=>{
     if(err) throw err
     console.log("Server running")
 })
+
+
+app.post('/login', (req, res) => {
+  res.json({ message: "User logged in" });
+});

@@ -288,7 +288,15 @@ Request - Header(jwt token - auth)
 
 
 POST    - http://127.0.0.1:8080/emp/create
+GET     - http://127.0.0.1:8080/emp/read/101
+GET     - http://127.0.0.1:8080/emp/all
+PUT     - http://127.0.0.1:8080/emp/update/101
+DELETE  - http://127.0.0.1:8080/emp/delete/101
+
+POST    - http://127.0.0.1:8080/emp/create
 GET     - http://127.0.0.1:8080/emp/101
 GET     - http://127.0.0.1:8080/emp/
 PUT     - http://127.0.0.1:8080/emp/101
 DELETE  - http://127.0.0.1:8080/emp/101
+
+Node Js - Routing?
