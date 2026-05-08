@@ -300,3 +300,27 @@ PUT     - http://127.0.0.1:8080/emp/101
 DELETE  - http://127.0.0.1:8080/emp/101
 
 Node Js - Routing?
+--------------------------------------------
+application Root
+http://127.0.0.1:8080/                -GET
+user module api
+http://127.0.0.1:8080/user/create     - POST
+http://127.0.0.1:8080/user/read       -  GET
+http://127.0.0.1:8080/user/101        -  GET
+http://127.0.0.1:8080/user/update/101 - PUT
+http://127.0.0.1:8080/user/Delete/101 - DELETE
+product module api
+http://127.0.0.1:8080/product/           - POST
+http://127.0.0.1:8080/product/read       -  GET
+http://127.0.0.1:8080/product/101        -  GET
+http://127.0.0.1:8080/product/101        - PUT
+http://127.0.0.1:8080/product/101        - DELETE
+order module api
+http://127.0.0.1:8080/order/           - POST
+http://127.0.0.1:8080/order/read       -  GET
+http://127.0.0.1:8080/order/101        -  GET
+http://127.0.0.1:8080/order/101        - PUT
+http://127.0.0.1:8080/order/101        - DELETE
+
+
+npm i express dotenv morgan
