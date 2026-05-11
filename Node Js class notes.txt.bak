@@ -324,3 +324,24 @@ http://127.0.0.1:8080/order/101        - DELETE
 
 
 npm i express dotenv morgan
+======================================
+json-crud
+
+npm init -y
+npm install express morgan dotenv nodemon
+
+
+http://127.0.0.1:8080/user/create    - POST
+http://127.0.0.1:8080/user/all       - GET
+http://127.0.0.1:8080/user/update/101- PUT
+http://127.0.0.1:8080/user/delete/101- DELETE
+
+
+http://127.0.0.1:8080/               -GET
+http://127.0.0.1:8080/user/create    -POST
+http://127.0.0.1:8080/user/          -GET
+
+http://127.0.0.1:8080/user/create        - POST
+http://127.0.0.1:8080/user/	         - GET
+http://127.0.0.1:8080/user/update/10	 - PUT
+http://127.0.0.1:8080/user/delete/10	 - DELETE
