@@ -41,34 +41,42 @@ router.post("/create",async (req,resp)=>{
 
 /*
 Usage: Update existing employee
-Rest API URL: http://127.0.0.1:8080/emp/update/101
+Rest API URL: http://127.0.0.1:8080/emp/update/:eid
 Method Type: PUT
 Required Fields: eid (in URL), ename, esal, gender (in body)
 Access Type: Public
 */
-router.put("/update/:empId", async(req,resp)=>{
-    let empId=req.params.empId;
-    console.log("URL Data: ",empId);
+router.put("/update/:eid",async (req,resp)=>{
+    //get employee id from URL parameter
+    let eid=parseInt(req.params.eid);
+    let updateData=req.body;
+    
+    //read all employees
     let employees=await getEmployees();
-    //verify employee is exists or not
-    let empData=employees.find((emp)=>{
-        return emp.eid==empId;
+    
+    //find employee index
+    let empIndex=employees.findIndex((emp)=>{
+        return emp.eid === eid;
     })
-    console.log(empData);
-    if(!empData){
-        return resp.status(404).json({"msg":"Employee Not Exits"})
+    
+    //check if employee exists
+    if(empIndex === -1){
+        return resp.status(404).json({"msg":"Employee Not Found"})
     }
-    //If employee exits - go for update
-    let employee=req.body;
-    let remaining_Employees=employees.filter((emp)=>{
-        return emp.eid!=empId;
-    })
-    remaining_Employees.push(employee)
-    await saveEmployee(remaining_Employees)
+    
+    //update employee details
+    employees[empIndex]={
+        eid:eid,
+        ename:updateData.ename || employees[empIndex].ename,
+        esal:updateData.esal || employees[empIndex].esal,
+        gender:updateData.gender || employees[empIndex].gender
+    }
+    
+    //save updated employees
+    saveEmployee(employees)
+    
     return resp.status(200).json({"msg":"Employee Updated Successfully"})
-
 })
-
 
 let saveEmployee=(employees)=>{
     fs.writeFileSync(path.join(process.cwd(),"data","emp.json"),

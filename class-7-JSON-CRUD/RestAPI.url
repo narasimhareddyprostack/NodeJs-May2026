@@ -1,0 +1,7 @@
+http://127.0.0.1:8080/emp/
+
+CRUD API
+http://127.0.0.1:8080/emp/create             - POST
+http://127.0.0.1:8080/emp/read              - GET
+http://127.0.0.1:8080/emp/update/101        - PUT 
+http://127.0.0.1:8080/emp/delete/101        - DELETE 
