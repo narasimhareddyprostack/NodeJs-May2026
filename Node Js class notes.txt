@@ -356,3 +356,54 @@ http://127.0.0.1:8080/emp/read	         - GET
 http://127.0.0.1:8080/emp/update/101	 - PUT
 http://127.0.0.1:8080/emp/delete/101	 - DELETE
 
+------------------------------------------------------
+UseCase 1:
+
+Vikas Pandey: Ecommerce Web Application
+---------------------------------------
+Organic Foods : MERN Stack
+Register and login, buy products
+a)User Module Featurs
+  Reg,login,update_profile,get_profile
+b)Product Module
+c)Order Module
+d)Payment Module
+===========================================
+User Reg -a) MObile OTP
+          b) Email OTP
+	  c) UserName,email,Pwd,CC
+	 
+vP,vp@gmail.com,Paswered, 2345678923456722
+NK,NK@gmail.com,Paswered, 2345678923456722
+vP,vp@gmail.com,Paswered, 2345678923456722
+vP,vp@gmail.com,Paswered, 2345678923456722
+vP,vp@gmail.com,Paswered, 2345678923456722
+vP,vp@gmail.com,Paswered, 2345678923456722
+
+Hashing the user senstive data? 
+----------------------------------- 
+cc,cvv,exp data, 
+user login password, 
+email
+
+using bcrypt
+3rd Node JS Module: bcrypt
+===================================
+npm init -y
+npm install bcrypt
+
+
+Vikas:
+uname: vikas Pandey
+Password:vikas@Pandey123
+cc : 3456123434561234
+
+==================================================
+
+
+
+
+
+
+
+
