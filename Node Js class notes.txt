@@ -399,8 +399,23 @@ Password:vikas@Pandey123
 cc : 3456123434561234
 
 ==================================================
+https://happenstance.com
+/product-category/perfect-sandals-for-men-and-women
+
+https://happenstance.com/
+product/indie-night-rider-m3w4?
+section=Men
 
 
+========================================
+
+npm init -y
+npm install express mongoose morgan dotevn nodemon
+
+How to connect with MongoDB Database?
+
+using mongodb package or mongoose.
+---------------------------------------------
 
 
 
