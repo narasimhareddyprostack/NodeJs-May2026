@@ -79,42 +79,37 @@ Access Type: Public
 router.put("/:id", async (req, resp) => {
     try {
 
-        // Read URL param
+        //reading url para
         let emp_doc_id = req.params.id;
-        console.log(emp_doc_id);
-
-        // Read request body
+        //reading form data / body data
         let updateEmployee = {
             eid: req.body.eid,
             ename: req.body.ename,
             esal: req.body.esal
         };
+        
+        let updatedEmployee = await EmployeeModel.findByIdAndUpdate(
+            emp_doc_id,
+            updateEmployee,
+            { new: true }
+        );
 
-        // Check employee exists or not
-        let employee = await EmployeeModel.findById(emp_doc_id);
-
-        if (!employee) {
+        if (!updatedEmployee) {
             return resp.status(404).json({
-                msg: "Employee does not exist"
+                msg: "Employee not found"
             });
         }
 
-        // Update employee
-        await EmployeeModel.findByIdAndUpdate(
-            emp_doc_id,
-            updateEmployee
-        );
-
         return resp.status(200).json({
-            msg: "Employee Updated Successfully"
+            msg: "Employee Updated Successfully",
+            employee: updatedEmployee
         });
 
     } catch (error) {
 
-        console.log(error);
-
         return resp.status(500).json({
-            msg: "Unable to Update"
+            msg: "Unable to Update",
+            error: error.message
         });
     }
 });
